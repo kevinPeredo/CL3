@@ -1,0 +1,14 @@
+Set global time_zone ='+8:00';
+CREATE DATABASE CL3_Peredo;
+Use CL3_Peredo ;
+
+
+CREATE TABLE IF NOT EXISTS Producto(
+producto_id int NOT NULL AUTO_INCREMENT COMMENT 'Id de Producto',
+ producto_nombre varchar(100) NOT NULL COMMENT 'Nombre del Producto',
+ producto_descripcion varchar(100) NOT NULL COMMENT 'Descripcion del Producto',
+ producto_fecha_Registro varchar(10) NOT NULL COMMENT 'Año de ingreso del Estudiante',
+ PRIMARY KEY (`producto_id`)
+);
+
+INSERT INTO Producto VALUES (1, "Arroz de Sur", "Contenido alto en fibra","2022");	

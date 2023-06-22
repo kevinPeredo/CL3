@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Reporte_Productos" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8a29086e-e7ed-4bb7-9aab-70d3f9843053">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<subDataset name="DatasetProducto" uuid="b014bb23-6673-4f62-9cd2-36507fd83ace">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+	</subDataset>
+	<parameter name="NOMBRE_PATH" class="java.lang.String"/>
+	<parameter name="DESCRIPCION_PATH" class="java.lang.String"/>
+	<parameter name="FECHA_PATH" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="70" splitType="Stretch">
+			<staticText>
+				<reportElement x="230" y="20" width="100" height="30" uuid="08714c39-a53a-4c35-9848-c18fc678a122"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NUEVO PRODUCTO GENERADO]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="248" splitType="Stretch">
+			<textField>
+				<reportElement x="180" y="20" width="100" height="30" uuid="9e3b358f-c2bb-4ed4-af9c-706eec91db34"/>
+				<textFieldExpression><![CDATA[$P{NOMBRE_PATH}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="80" width="100" height="30" uuid="04f2b05e-e724-42fb-99e0-ddf6bed5c4f2"/>
+				<textFieldExpression><![CDATA[$P{DESCRIPCION_PATH}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="160" width="100" height="30" uuid="dd56f7f0-6f56-4495-bd26-679e6ed8d1a3"/>
+				<textFieldExpression><![CDATA[$P{FECHA_PATH}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
